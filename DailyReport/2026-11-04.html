@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>증시 리포트 — 2026년 11월 4일</title>
+<style>
+:root { --color-fg:#16213A; --color-fg-muted:#6A7290; --color-panel:#fff; --color-border-line:#DDE1E8; --cds-chart-grid:#EBEDF2; --cds-chart-reference:#B9BFCC; --paper:#F6F7F9;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme:dark; --color-fg:#E8EAF0; --color-fg-muted:#9AA2B8; --color-panel:#1A1E28; --color-border-line:#2C3240; --cds-chart-grid:#262B37; --cds-chart-reference:#4A5265; --paper:#12151C; } }
+:root[data-theme="dark"] { color-scheme:dark; --color-fg:#E8EAF0; --color-fg-muted:#9AA2B8; --color-panel:#1A1E28; --color-border-line:#2C3240; --cds-chart-grid:#262B37; --cds-chart-reference:#4A5265; --paper:#12151C; }
+html { scroll-padding-top:env(safe-area-inset-top,0px); }
+body { margin:0; background:var(--paper); color:var(--color-fg); -webkit-text-size-adjust:100%; }
+.wrap { padding:1.5rem 1.1rem 3rem; }
+</style>
+</head>
+<body><div class="wrap">
+<style>
+.mk { --ink: var(--color-fg, #16213A); --ink2: var(--color-fg-muted, #6A7290); --panel: var(--color-panel, #fff); --line: var(--color-border-line, #DDE1E8); --grid: var(--cds-chart-grid, #EBEDF2); --ref: var(--cds-chart-reference, #B9BFCC);
+  --up: #D23C2F; --down: #2962C9; --warn: #D99A00; --font: var(--font-anthropic-sans, "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", -apple-system, sans-serif);
+  font-family: var(--font); max-width: 70rem; margin-inline: auto; font-variant-numeric: tabular-nums; color: var(--ink); line-height: 1.55; }
+@media (prefers-color-scheme: dark) { .mk { --up: #F0655A; --down: #6D9BF0; --warn: #E8B33C; } }
+.mk h1 { font-size: 1.6rem; font-weight: 700; margin: 0 0 .25rem; letter-spacing: -.01em; line-height: 1.25; }
+.mk .kicker { color: var(--ink2); font-size: .82rem; margin: 0 0 .4rem; }
+.mk .lead { color: var(--ink2); margin: 0 0 1rem; max-width: 48rem; }
+.mk .tabs { display: flex; gap: .4rem; margin: 1rem 0 1.25rem; border-bottom: 2px solid var(--line); }
+.mk .tabs button { font: inherit; font-weight: 600; background: none; border: 0; border-bottom: 3px solid transparent; margin-bottom: -2px; padding: .5rem .9rem; color: var(--ink2); cursor: pointer; }
+.mk .tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.mk .tabs button:focus-visible { outline: 2px solid var(--down); outline-offset: 2px; border-radius: 4px; }
+.mk section[hidden] { display: none; }
+.mk h2 { font-size: 1.2rem; margin: 2rem 0 .25rem; padding-left: .6rem; border-left: 4px solid var(--ink); line-height: 1.3; }
+.mk h3.sect { font-size: 1rem; margin: 1.4rem 0 .25rem; }
+.mk .sub { color: var(--ink2); font-size: .9rem; margin: 0 0 .9rem; max-width: 50rem; }
+.mk .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: .7rem; }
+.mk .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .8rem .9rem; }
+.mk .tile .lbl { color: var(--ink2); font-size: .76rem; }
+.mk .tile .big { font-size: 1.7rem; font-weight: 700; line-height: 1.15; letter-spacing: -.02em; }
+.mk .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: .9rem; }
+.mk .grid-sm { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr)); gap: .6rem; }
+.mk .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem; position: relative; min-width: 0; }
+.mk .card h3 { font-size: 1rem; margin: 0 0 .1rem; }
+.mk .card .note { color: var(--ink2); font-size: .78rem; margin: 0 0 .5rem; }
+.mk .chart { width: 100%; position: relative; min-height: 200px; }
+.mk .up { color: var(--up); } .mk .down { color: var(--down); } .mk .flat { color: var(--ink2); }
+.mk .sm { padding: .7rem .8rem; }
+.mk .sm .nm { display: flex; justify-content: space-between; gap: 4px; font-weight: 600; font-size: .9rem; }
+.mk .sm .nm small { color: var(--ink2); font-weight: 400; }
+.mk .sm .pct { font-size: 1.25rem; font-weight: 700; margin: 1px 0 3px; letter-spacing: -.02em; }
+.mk .sm .tag { color: var(--ink2); font-size: .72rem; line-height: 1.3; }
+.mk .spark { width: 100%; height: 46px; display: block; }
+.mk .tip { position: absolute; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.14); padding: 4px 8px; font-size: .78rem; pointer-events: none; display: none; white-space: nowrap; z-index: 2; }
+.mk .tip .d { color: var(--ink2); }
+.mk table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.mk th, .mk td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.mk th { color: var(--ink2); font-weight: 500; font-size: .76rem; }
+.mk td.num, .mk th.num { text-align: right; white-space: nowrap; }
+.mk .tw { overflow-x: auto; }
+.mk .flow { display: grid; gap: .5rem; }
+.mk .flow .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: .5rem; }
+.mk .fbox { border-radius: 8px; padding: .7rem .85rem; border: 1px solid var(--line); background: var(--panel); }
+.mk .fbox b { display: block; margin-bottom: 2px; font-size: .93rem; }
+.mk .fbox .v { font-size: 1.05rem; font-weight: 700; }
+.mk .fbox small { color: var(--ink2); font-size: .78rem; display: block; line-height: 1.45; }
+.mk .g { background: color-mix(in srgb, var(--up) 9%, var(--panel)); } .mk .k { background: color-mix(in srgb, var(--warn) 14%, var(--panel)); }
+.mk .arrow { text-align: center; color: var(--ink2); font-size: 1.2rem; line-height: 1; }
+.mk .legend { display: flex; gap: 1rem; font-size: .76rem; color: var(--ink2); margin-top: .4rem; flex-wrap: wrap; }
+.mk .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; border: 1px solid var(--line); }
+.mk .scen { border-left: 4px solid var(--line); }
+.mk .scen.bull { border-left-color: var(--up); } .mk .scen.bear { border-left-color: var(--down); } .mk .scen.base { border-left-color: var(--warn); }
+.mk ul { margin: 6px 0 0; padding-left: 1.1rem; font-size: .9rem; } .mk li { margin: 2px 0; }
+.mk .caveat { color: var(--ink2); font-size: .78rem; line-height: 1.55; margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.mk .colornote { font-size: .76rem; color: var(--ink2); margin: 0 0 1rem; }
+.mk .colornote i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin: 0 3px 0 8px; vertical-align: -1px; }
+.mk .news { background: color-mix(in srgb, var(--down) 7%, var(--panel)); border: 1px solid var(--line); border-left: 4px solid var(--down); border-radius: 10px; padding: .85rem 1rem; margin: 1rem 0 0; font-size: .92rem; }
+.mk .news b { color: var(--ink); }
+.mk .tl { display: grid; gap: .55rem; }
+.mk .ev { display: grid; grid-template-columns: 5.2rem 1fr 6.5rem; gap: .8rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .75rem .9rem; align-items: start; }
+@media (max-width: 40rem) { .mk .ev { grid-template-columns: 1fr; gap: .3rem; } }
+.mk .ev .when { font-size: .78rem; color: var(--ink2); line-height: 1.35; }
+.mk .ev .when b { display: block; color: var(--ink); font-size: .85rem; }
+.mk .ev .cat { display: inline-block; font-size: .7rem; border: 1px solid var(--line); border-radius: 999px; padding: 0 .5rem; color: var(--ink2); margin-bottom: 3px; }
+.mk .ev .ttl { font-weight: 600; font-size: .95rem; margin: 0 0 2px; }
+.mk .ev .dt { font-size: .85rem; color: var(--ink2); margin: 0; }
+.mk .ev .aff { font-size: .74rem; color: var(--ink2); margin-top: 4px; }
+.mk .imp { text-align: right; }
+.mk .imp .lab { font-size: .72rem; color: var(--ink2); }
+.mk .imp .bar { display: flex; height: 10px; border-radius: 3px; overflow: hidden; background: var(--grid); margin: 3px 0 2px; position: relative; }
+.mk .imp .bar i { position: absolute; top: 0; bottom: 0; }
+.mk .imp .bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--ref); }
+.mk .imp .sc { font-weight: 700; font-size: .95rem; }
+.mk svg text { font-family: inherit; }
+</style>
+
+<div class="mk">
+  <p class="kicker">2026년 11월 4일(수) 작성 · 어제(11/3) 종가 → 오늘(11/4) 장 초반 + 오늘 밤 미국장 전망 기준</p>
+  <h1>증시 리포트 — 11월 4일</h1>
+  <p class="lead" id="lead"></p>
+  <p class="colornote">등락 색상은 국내 관행을 따릅니다 <i style="background:var(--up)"></i>상승 <i style="background:var(--down)"></i>하락</p>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-d" aria-selected="true" aria-controls="sec-d">오늘 (11/4)</button>
+    <button role="tab" id="tab-w" aria-selected="false" aria-controls="sec-w">최근 흐름 (10/29~11/4)</button>
+  </div>
+
+  <!-- ===================== DAILY (오늘 11/4) ===================== -->
+  <section id="sec-d" role="tabpanel" aria-labelledby="tab-d">
+    <div class="tiles" id="d-tiles"></div>
+
+    <div class="news" id="d-news"></div>
+
+    <h2>1. 오늘 주가 — 어제(11/3) 종가 대비 오늘(11/4)</h2>
+    <p class="sub">어제(11/3) 'AI 수익성' 우려·중간선거 경계에 -3.59%(5,648.79) 급락했던 코스피가 오늘(11/4)은 간밤 미국 반도체 반등(특히 AMD 어닝 서프라이즈)에 힘입어 +2.43%(5,786)로 급반등하며 5,800선을 회복했습니다. 삼성전자·SK하이닉스가 반등을 주도합니다. 오늘 값은 장 초반 장중가이며 마감가가 아닙니다.</p>
+    <div class="grid">
+      <div class="card"><h3>코스피</h3><p class="note">종가, pt · 11/4는 장중(점선)</p><div class="chart" id="d-kospi"></div></div>
+      <div class="card"><h3>삼성전자</h3><p class="note">원 · 11/4는 장중(점선)</p><div class="chart" id="d-sec"></div></div>
+      <div class="card"><h3>SK하이닉스</h3><p class="note">원 · 11/4는 장중(점선)</p><div class="chart" id="d-hynix"></div></div>
+    </div>
+    <div class="card" style="margin-top:.9rem"><h3>주요 종목 — 어제(11/3) 종가 · 오늘(11/4) 장중</h3><p class="note">% · 11/4는 장 초반 · 확인된 종목만</p><div class="tw"><table><thead><tr><th>종목</th><th class="num">11/3(종가)</th><th class="num">11/4(장중)</th><th>흐름</th></tr></thead><tbody id="d-stocks"></tbody></table></div></div>
+
+    <h2>2. 오늘(11/3 밤~11/4) 뉴스·이슈와 영향도</h2>
+    <p class="sub">어제 미국장 마감·실적부터 오늘 국내장까지 순서대로 정리했습니다. 영향도는 -3(강한 악재)부터 +3(강한 호재)까지, 코스피 기준 제 주관적 점수입니다. 막대가 가운데 선 왼쪽이면 악재, 오른쪽이면 호재입니다.</p>
+    <div class="tl" id="d-issues"></div>
+
+    <h2>3. 오늘 밤 미국장 — 간밤(11/3) 마감과 AMD 서프라이즈</h2>
+    <p class="sub">간밤 미국장(11/3)은 AMD의 3분기 사상 최대 실적(데이터센터 +97%)·강한 4분기 가이던스에 반도체가 반등(SOX +2.63%)하며 나스닥이 +0.83% 올랐습니다(다우는 애플 약세에 -0.38%). 오늘 밤은 ISM 서비스·ADP 고용과 ARM·QCOM 실적이 변수입니다. 왼쪽은 간밤 미 주요 종목 등락률입니다.</p>
+    <div class="grid">
+      <div class="card"><h3>간밤(11/3) 미 주요 종목 등락률</h3><p class="note">% · AMD는 정규장(시간외 +8%) · 확인된 종목만</p><div class="chart" id="d-usbar"></div></div>
+      <div class="card"><h3>미국 지수 (간밤 11/3 마감)</h3><p class="note">종가, pt · 현지시간</p><div class="chart" id="d-spx"></div><div class="chart" id="d-nasdaq" style="margin-top:.5rem"></div></div>
+    </div>
+
+    <h2>4. 오늘의 판단</h2>
+    <div class="grid" id="d-verdict"></div>
+  </section>
+
+  <!-- ===================== WEEKLY (맥락) ===================== -->
+  <section id="sec-w" role="tabpanel" aria-labelledby="tab-w" hidden>
+    <div class="tiles" id="w-tiles"></div>
+
+    <h2>1. 지수 흐름 — 국내 vs 미국</h2>
+    <p class="sub">코스피는 28일 사상 첫 6,000선(6,012)을 찍은 뒤 'AI 수익성' 쇼크로 급락·반등·재급락을 반복하고 있습니다. 11/3 -3.59%(5,648) 뒤 오늘 11/4 급반등. 미국도 반도체가 하루 간격 급등락 중입니다.</p>
+    <div class="grid">
+      <div class="card"><h3>코스피</h3><p class="note">종가, pt · 11/4는 장중(점선)</p><div class="chart" id="w-kospi"></div></div>
+      <div class="card"><h3>나스닥 종합</h3><p class="note">종가, pt · 현지시간</p><div class="chart" id="w-nasdaq"></div></div>
+      <div class="card"><h3>S&amp;P 500</h3><p class="note">종가, pt · 현지시간</p><div class="chart" id="w-spx"></div></div>
+    </div>
+
+    <h2>2. 반도체 3인방 · 환율</h2>
+    <p class="sub">반도체 대형주는 'AI 수익성' 우려에 급등락을 반복하다 오늘 AMD 서프라이즈에 반등했습니다. SK하이닉스는 140만원을 회복(+5%대), 삼성전자 +3%대입니다. 원·달러는 1,341원 안팎입니다.</p>
+    <div class="grid">
+      <div class="card"><h3>삼성전자</h3><p class="note">원 · 11/4는 장중(점선)</p><div class="chart" id="w-sec"></div></div>
+      <div class="card"><h3>SK하이닉스</h3><p class="note">원 · 11/4는 장중(점선)</p><div class="chart" id="w-hynix"></div></div>
+      <div class="card"><h3>원·달러 환율</h3><p class="note">원 · 서울외국환중개 기준</p><div class="chart" id="w-krw"></div></div>
+    </div>
+
+    <h2>3. 미국 주요 종목 — 11/2 · 11/3 하루 등락률</h2>
+    <p class="sub">왼쪽은 11/2(월), 오른쪽은 11/3(화) 하루 등락률(확인된 종목만). AMD 실적을 계기로 반도체가 하루 만에 급반전했습니다.</p>
+    <div class="grid">
+      <div class="card"><h3>11/2 등락률</h3><p class="note">%</p><div class="chart" id="w-usbar"></div></div>
+      <div class="card"><h3>11/3 등락률</h3><p class="note">%</p><div class="chart" id="w-usweek"></div></div>
+    </div>
+
+    <h2>4. 최근 흐름 요약 — 'AI 수익성' 롤러코스터 속 수요 재확인</h2>
+    <p class="sub">사상 첫 6,000선 뒤 급등락이 반복되는 가운데, AMD의 사상 최대 실적이 'AI 수요는 견조'라는 반론을 재확인했습니다. 다만 애플·팔란티어式 '밸류 눈높이' 경계는 잔존합니다.</p>
+    <div class="card flow" id="w-flow"></div>
+
+    <h2>5. 앞으로의 추세 — 세 가지 시나리오</h2>
+    <p class="sub">"AI 수익성 논쟁이 변동성을 키우지만, AMD發 수요 재확인·외국인 매수 전환이 반등 변수"라는 구도입니다.</p>
+    <div class="grid" id="w-scen"></div>
+    <div class="card" style="margin-top:.9rem"><h3>체크해야 할 일정</h3><p class="note">이벤트와 왜 중요한지</p><div class="tw"><table><thead><tr><th>날짜</th><th>이벤트</th><th>관전 포인트</th></tr></thead><tbody id="w-events"></tbody></table></div></div>
+  </section>
+
+  <p class="caveat">데이터 출처: 코스피·국내 종목은 11/4 오전 장중 보도(아시아경제·SBS Biz·국제뉴스 등), 어제(11/3) 종가는 마감 보도(연합·미디어펜·헤럴드경제 등), 미국 지수·종목·실적은 간밤(11/3 현지) 보도(StockTitan·CNBC·Yahoo Finance 등), 부동산·거시는 관련 보도(한국경제·세계일보 등). 오늘(11/4) 코스피·개별 종목 수치는 장 초반 장중값으로 마감가와 다릅니다. 메타·테슬라·아마존 등 일부 종목 등락률·미 10년물·WTI 정확 수치·원달러 11/4·중간선거 확정 개표는 미확인입니다. 미 FOMC는 현 금리 3.75~4.00%로 '동결 vs 인상' 국면(인하 아님)입니다. 영향도 점수는 제 주관적 판단입니다. 이 리포트는 정보 정리 목적이며 투자 권유가 아닙니다.</p>
+  <div class="tip" id="tip"></div>
+</div>
+
+<script>
+function renderReport(D) {
+  const fmtP = d3.format('+.1f'), fmtP2 = d3.format('+.2f'), fmtN = d3.format(','), fmtD = d3.utcFormat('%-m/%-d');
+  const $ = id => document.getElementById(id);
+  const tip = $('tip');
+  const cls = v => v > 0.05 ? 'up' : v < -0.05 ? 'down' : 'flat';
+  const col = v => v >= 0 ? 'var(--up)' : 'var(--down)';
+  const root = document.querySelector('.mk');
+
+  function showTip(ev, html) {
+    const r = root.getBoundingClientRect();
+    tip.innerHTML = html; tip.style.display = 'block';
+    let x = ev.clientX - r.left + 12; const y = ev.clientY - r.top - 36;
+    const w = tip.offsetWidth; if (x + w > r.width) x = ev.clientX - r.left - w - 12;
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => tip.style.display = 'none';
+
+  function lineChart(el, rows, { color = 'var(--ink)', dashedLast = false, H = 210 } = {}) {
+    if (!el) return; el.innerHTML = '';
+    const W = el.clientWidth || 320, m = { t: 18, r: 58, b: 26, l: 8 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const pts = rows.map(r => ({ d: new Date(r.date), v: Number(r.close), note: r.note || '' }));
+    const x = d3.scalePoint(pts.map(p => p.d), [m.l, W - m.r]);
+    const ext = d3.extent(pts, p => p.v), pad = (ext[1] - ext[0]) * 0.15 || 1;
+    const y = d3.scaleLinear([ext[0] - pad, ext[1] + pad], [H - m.b, m.t]);
+    const g = svg.append('g'); const yt = y.ticks(4);
+    g.selectAll('line.grid').data(yt).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--grid)');
+    g.selectAll('text.yl').data(yt).join('text').attr('x', W - m.r + 6).attr('y', y).attr('dy', '0.35em').attr('fill', 'var(--ink2)').attr('font-size', 11).text(fmtN);
+    g.selectAll('text.xl').data(pts).join('text').attr('x', p => x(p.d)).attr('y', H - 7).attr('text-anchor', 'middle').attr('fill', 'var(--ink2)').attr('font-size', 11).text(p => fmtD(p.d));
+    const line = d3.line().x(p => x(p.d)).y(p => y(p.v));
+    g.append('path').attr('d', line(dashedLast ? pts.slice(0, -1) : pts)).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    if (dashedLast) g.append('path').attr('d', line(pts.slice(-2))).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.2).attr('stroke-dasharray', '4 4');
+    g.selectAll('circle').data(pts).join('circle').attr('cx', p => x(p.d)).attr('cy', p => y(p.v)).attr('r', 3.5).attr('fill', color);
+    const last = pts[pts.length - 1], first = pts[0], lo = pts.reduce((a, p) => p.v < a.v ? p : a, pts[0]);
+    g.append('text').attr('x', x(last.d)).attr('y', y(last.v) - 9).attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--ink)').attr('font-weight', 600).text(fmtN(last.v));
+    g.append('text').attr('x', x(first.d)).attr('y', y(first.v) - 9).attr('text-anchor', 'start').attr('font-size', 11).attr('fill', 'var(--ink2)').text(fmtN(first.v));
+    if (lo !== last && lo !== first) g.append('text').attr('x', x(lo.d)).attr('y', y(lo.v) + 14).attr('text-anchor', 'middle').attr('font-size', 10).attr('fill', 'var(--down)').text(fmtN(lo.v));
+    svg.on('mousemove', ev => {
+      const [mx] = d3.pointer(ev); let best = pts[0];
+      for (const p of pts) if (Math.abs(x(p.d) - mx) < Math.abs(x(best.d) - mx)) best = p;
+      const prev = pts[pts.indexOf(best) - 1]; const chg = prev ? ` (${fmtP2((best.v / prev.v - 1) * 100)}%)` : '';
+      g.selectAll('circle').attr('r', p => p === best ? 5.5 : 3.5);
+      showTip(ev, `<div class="d">${fmtD(best.d)}${best.note ? ' · ' + best.note : ''}</div><div>${fmtN(best.v)}${chg}</div>`);
+    }).on('mouseleave', () => { hideTip(); g.selectAll('circle').attr('r', 3.5); });
+  }
+
+  function hbar(el, rows, { key = 'name', val = 'pct', sub = null, height = 24 } = {}) {
+    if (!el) return; el.innerHTML = '';
+    const W = el.clientWidth || 320, H = rows.length * height + 30, lw = Math.min(150, W * 0.32), m = { t: 6, r: 48, b: 22, l: lw };
+    el.style.minHeight = H + 'px';
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const ext = d3.extent(rows, r => r[val]); const lo = Math.min(0, ext[0]), hi = Math.max(0, ext[1]);
+    const x = d3.scaleLinear([lo, hi], [m.l, W - m.r]).nice();
+    const y = d3.scaleBand(rows.map(r => r[key]), [m.t, H - m.b]).padding(0.25);
+    const g = svg.append('g');
+    g.selectAll('line.grid').data(x.ticks(5)).join('line').attr('y1', m.t).attr('y2', H - m.b).attr('x1', x).attr('x2', x).attr('stroke', 'var(--grid)');
+    g.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--ref)');
+    g.selectAll('text.xl').data(x.ticks(5)).join('text').attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--ink2)').text(v => fmtP(v) + '%');
+    g.selectAll('rect').data(rows).join('rect').attr('x', r => Math.min(x(0), x(r[val]))).attr('width', r => Math.abs(x(r[val]) - x(0))).attr('y', r => y(r[key])).attr('height', y.bandwidth()).attr('rx', 3).attr('fill', r => col(r[val]))
+      .on('mousemove', (ev, r) => showTip(ev, `<div class="d">${r[key]}${sub && r[sub] ? ' · ' + r[sub] : ''}</div><div>${fmtP2(r[val])}%</div>`)).on('mouseleave', hideTip);
+    g.selectAll('text.nm').data(rows).join('text').attr('x', m.l - 6).attr('y', r => y(r[key]) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--ink)').text(r => r[key]);
+    g.selectAll('text.vl').data(rows).join('text').attr('x', r => r[val] >= 0 ? x(r[val]) + 4 : x(r[val]) - 4).attr('y', r => y(r[key]) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', r => r[val] >= 0 ? 'start' : 'end').attr('font-size', 11).attr('fill', 'var(--ink2)').text(r => fmtP(r[val]) + '%');
+  }
+
+  // ---------- derived ----------
+  const byM = m => D.indices.filter(r => r.market === m).sort((a, b) => a.date < b.date ? -1 : 1);
+  const kAt = d => { const r = byM('KOSPI').find(r => r.date === d); return r ? Number(r.close) : null; };
+  const macro = Object.fromEntries(D.macro.map(r => [r.key, r]));
+  const mv = k => macro[k] ? fmtN(Number(macro[k].value)) : '—';
+  const kd = n => D.kr_daily.filter(r => r.name === n).sort((a, b) => a.date < b.date ? -1 : 1);
+  const k29 = kAt('2026-10-29'), k02 = kAt('2026-11-02'), k03 = kAt('2026-11-03'), k04 = kAt('2026-11-04');
+  const nas = byM('NASDAQ'), spx = byM('SPX');
+  const wkN = (Number(nas[nas.length - 1].close) / Number(nas[0].close) - 1) * 100, wkS = (Number(spx[spx.length - 1].close) / Number(spx[0].close) - 1) * 100;
+
+  $('lead').textContent = `어제(11/3) 'AI 수익성' 우려·중간선거 경계에 -3.59%(5,648) 급락했던 코스피가 오늘(11/4)은 간밤 미국 반도체 반등에 힘입어 ${fmtP2((k04 / k03 - 1) * 100)}%(5,786)로 급반등하며 5,800선을 회복했습니다. 특히 AMD가 3분기 사상 최대 실적(데이터센터 +97%)과 강한 4분기 가이던스로 시간외 +8% 급등한 것이 투자심리를 되살렸고, 삼성전자(+3.5%)·SK하이닉스(+5.5%)가 반등을 주도했습니다. 외국인도 순매수로 전환 조짐입니다. 다만 애플·팔란티어의 '밸류 눈높이' 경계는 잔존하고, 미 중간선거 개표가 진행 중입니다. 오늘 밤 ISM 서비스·ARM/QCOM 실적이 변수입니다. (오늘 수치는 장 초반 장중값)`;
+
+  $('d-news').innerHTML = `<b>📰 주요 뉴스</b> — 어제 -3.59%(5,648) 급락 뒤 오늘 <b>+2.43% 급반등</b>(5,800선 회복). 간밤 미 반도체 반등(SOX +2.63%)+특히 <b>AMD 어닝 서프라이즈</b>(데이터센터 +97%·시간외 +8%). 삼전 +3.5%·SK하이닉스 +5.5%(140만 회복), 외국인 순매수 전환 조짐. 미 중간선거 개표 중, 오늘 밤 ISM 서비스·ARM/QCOM 실적. 부동산은 신규 통계 없이 대통령 '서울 실거래가 하락' 통계 문제제기(공식 90주 연속 상승과 괴리). <span style="color:var(--ink2)">(Businesskorea·StockTitan·한국경제 11/3~4 보도)</span>`;
+
+  const tile = (lbl, v, sub, isPct = true) => `<div class="tile"><div class="lbl">${lbl}</div><div class="big ${isPct ? cls(v) : ''}">${isPct ? fmtP2(v) + '%' : v}</div><div class="lbl">${sub}</div></div>`;
+  $('d-tiles').innerHTML =
+    tile('코스피 11/4 장중', (k04 / k03 - 1) * 100, '5,786 안팎 · 5,800선 회복') +
+    tile('코스닥 11/4 장중', 1.61, '715 안팎 · 동반 반등') +
+    tile('SK하이닉스 11/4', 5.50, '1,475,000원 · 140만 회복') +
+    tile('간밤 SOX', 2.63, 'AMD 서프라이즈 · 칩주 반등', true) +
+    tile('외국인 11/4 장중', '+978억', '순매수 전환 조짐', false);
+  $('w-tiles').innerHTML =
+    tile('코스피 · 10/29 → 11/4 장중', (k04 / k29 - 1) * 100, '10/28 고점 6,012 대비 ' + fmtP(((k04 / 6012.44) - 1) * 100) + '%') +
+    tile('나스닥 · 주간', wkN, '11/3 +0.83% 반도체 반등') +
+    tile('S&P 500 · 주간', wkS, '11/3 +0.36% (3일 하락 뒤 반등)') +
+    tile('간밤 SOX', 2.63, '엔비디아·브로드컴·마이크론 강세', true) +
+    tile('외국인 11/3', '-1.5조', '대량 순매도로 급락 주도', false);
+
+  // ---------- daily: stocks table ----------
+  const tb = $('d-stocks'); tb.innerHTML = '';
+  const rowsD = D.stocks.map(r => ({ name: r.name, a: r.a === '' ? null : +r.a, b: r.b === '' ? null : +r.b, note: r.note }));
+  rowsD.forEach(r => {
+    const tr = document.createElement('tr');
+    const f = v => v == null ? '<td class="num flat">—</td>' : `<td class="num ${cls(v)}">${fmtP2(v)}%</td>`;
+    const flow = r.a != null && r.b != null ? (r.a < 0 && r.b > 0 ? '급락 후 반등' : r.a < 0 && r.b < 0 ? '이틀 연속 하락' : r.a > 0 && r.b < 0 ? '상승 후 하락' : r.a > 0 && r.b > 0 ? '이틀 연속 상승' : '혼조') : (r.a != null ? (r.a > 0 ? '어제 상승' : '어제 하락') : r.note);
+    tr.innerHTML = `<td>${r.name}<br><small style="color:var(--ink2)">${r.note}</small></td>${f(r.a)}${f(r.b)}<td>${flow}</td>`;
+    tb.appendChild(tr);
+  });
+
+  // ---------- daily: issues timeline ----------
+  const tl = $('d-issues'); tl.innerHTML = '';
+  D.issues.forEach(r => {
+    const s = Number(r.impact); const w = Math.abs(s) / 3 * 50;
+    const label = s <= -3 ? '강한 악재' : s <= -2 ? '악재' : s < 0 ? '약한 악재' : s === 0 ? '중립' : s < 2 ? '약한 호재' : s < 3 ? '호재' : '강한 호재';
+    const div = document.createElement('div'); div.className = 'ev';
+    div.innerHTML = `<div class="when"><b>${fmtD(new Date(r.date))}</b>${r.time}</div>
+      <div><span class="cat">${r.category}</span><p class="ttl"></p><p class="dt"></p><div class="aff">영향 종목·업종: <span></span></div></div>
+      <div class="imp"><div class="lab">코스피 영향도</div><div class="bar"><i style="background:${col(s)};${s >= 0 ? 'left:50%' : 'right:50%'};width:${w}%"></i></div><div class="sc ${cls(s)}">${s > 0 ? '+' : ''}${s} · ${label}</div></div>`;
+    div.querySelector('.ttl').textContent = r.title; div.querySelector('.dt').textContent = r.detail; div.querySelector('.aff span').textContent = r.affected;
+    tl.appendChild(div);
+  });
+
+  // ---------- daily: verdict ----------
+  $('d-verdict').innerHTML = `
+    <div class="card scen base"><h3>오늘 한 줄</h3><p class="note">하루 만에 급반등 · AMD가 'AI 수요 견조' 재확인</p>
+      <ul><li>어제 -3.59% 급락의 반작용에 더해, AMD 사상 최대 실적(데이터센터 +97%·Q4 가이던스 $17B)이 'AI 수요는 견조'를 재확인하며 반도체 투심 회복. SK하이닉스 140만원 회복</li><li>외국인이 어제 -1.5조 매도에서 오늘 +978억 순매수로 전환 조짐. 반등 지속의 관건</li><li>다만 애플 마진 우려·팔란티어 '밸류 눈높이' 경계는 잔존하고, 중간선거 개표 결과가 변수. 급등락 롤러코스터 국면은 지속</li></ul></div>
+    <div class="card scen bear"><h3>체크 (악재 쪽)</h3><p class="note">이 중 겹치면 반등 되돌림</p>
+      <ul><li>중간선거 개표 혼란·'민주 스윕' 등 시장 부담 시나리오</li><li>애플/팔란티어式 'AI 밸류 눈높이' 경계 확산</li><li>외국인 순매수가 하루짜리로 종료</li></ul></div>
+    <div class="card scen bull"><h3>체크 (호재 쪽)</h3><p class="note">이 중 나오면 반등 연장</p>
+      <ul><li>ARM·QCOM 실적도 호조 → 'AI 수요 견조' 서사 강화</li><li>외국인 순매수 안착 + SOX 반등 지속</li><li>유가 하락·물가 안정(CPI 2.8%)이 금리 부담 완화</li></ul></div>`;
+
+  // ---------- weekly: flow + scenarios + events ----------
+  $('w-flow').innerHTML = `
+    <div class="row">
+      <div class="fbox g"><b>AMD 어닝 서프라이즈</b><small>3Q 매출 $13.4B(+45% 사상최대)·데이터센터 <span class="v">+97%</span>·Q4 가이던스 $17B. 정규장 +3.65%, 시간외 +8%. 'AI 수요 견조' 재확인</small></div>
+      <div class="fbox g"><b>미 반도체 반등</b><small>SOX <span class="v">+2.63%</span> · 엔비디아 +2.29%·브로드컴 +3.07%·마이크론 +2.58%. 나스닥 +0.83%</small></div>
+      <div class="fbox g"><b>외국인 순매수 전환 조짐</b><small>어제 코스피 외국인 -1.5조 매도 → 오늘 장 초반 <span class="v">+978억</span> 순매수. SK하이닉스 140만 회복</small></div>
+    </div><div class="arrow">↓</div>
+    <div class="row">
+      <div class="fbox k"><b>애플 마진 우려</b><small>분기 매출 사상최대에도 '메모리값 상승' 마진 경고로 11/3 -1.9%. 다우 -0.38% 압박</small></div>
+      <div class="fbox k"><b>팔란티어 '밸류 눈높이'</b><small>매출 +96%·美상업 +148% 호실적에도 신규 부킹(TCV +6%) 둔화에 <span class="v">-1.65%</span>. AI 밸류 경계</small></div>
+    </div><div class="arrow">↓</div>
+    <div class="row">
+      <div class="fbox k"><b>중간선거·일정</b><small>미 중간선거 개표 진행 중 · 오늘 밤 ISM 서비스·ADP·ARM/QCOM 실적. 결과 따라 변동성</small></div>
+      <div class="fbox g"><b>물가·유가</b><small>10월 한국 CPI <span class="v">+2.8%</span> 두 달째 2%대 · 유가 하락(미·이란 협상 기대). 완충 요인</small></div>
+    </div><div class="arrow">↓</div>
+    <div class="row"><div class="fbox" style="text-align:center"><b>급락(11/3 -3.59%) → 반등(11/4 +2.43%) · 'AI 수요 재확인'과 '밸류 경계'의 줄다리기</b><small>AMD發 수요 재확인·외국인 매수 전환이 반등을 이끌었으나, 애플·팔란티어 경계와 선거 불확실성이 변수</small></div></div>
+    <div class="legend"><span><i style="background:color-mix(in srgb, var(--up) 25%, var(--panel))"></i>반등 재료</span><span><i style="background:color-mix(in srgb, var(--warn) 40%, var(--panel))"></i>부담·변수</span></div>`;
+  $('w-scen').innerHTML = `
+    <div class="card scen bear"><h3>재하락 (밸류 경계)</h3><p class="note">조건: 선거 혼란 · AI 밸류 눈높이 우려 · 외국인 재매도</p>
+      <ul><li>애플·팔란티어式 '밸류 눈높이' 경계가 커지면 반등이 하루짜리로 끝날 소지</li><li>중간선거 개표 결과가 시장에 부담이면 변동성 확대</li><li>외국인이 순매수를 접고 매도로 돌아서면 수급 공백</li></ul></div>
+    <div class="card scen base"><h3>고변동성 (롤러코스터)</h3><p class="note">조건: 급등락 반복 · 수요 견조 · 수급 혼조</p>
+      <ul><li>6,012 고점에서 5,600~5,900 박스권을 하루 간격으로 오가는 장세 지속</li><li>AMD發 'AI 수요 견조'와 유가·물가 안정이 하방을 받침</li><li>선거·고용 결과를 확인하기 전 눈치보기</li></ul></div>
+    <div class="card scen bull"><h3>반등 연장 (수요 재확인)</h3><p class="note">조건: ARM/QCOM 호실적 · 외국인 매수 안착 · SOX 강세</p>
+      <ul><li>AMD에 이어 ARM·QCOM도 호실적이면 'AI 수요 견조' 서사가 강화되며 반도체 재평가</li><li>외국인 순매수가 이어지고 SOX 반등이 지속되면 추세 반등</li><li>유가·금리 하락과 수출 호조가 펀더멘털 신뢰를 지지</li></ul></div>`;
+  const eb = $('w-events'); eb.innerHTML = '';
+  D.events.forEach(r => { const tr = document.createElement('tr'); ['date', 'event', 'why'].forEach(k => { const td = document.createElement('td'); td.textContent = r[k]; tr.appendChild(td); }); eb.appendChild(tr); });
+
+  // ---------- charts ----------
+  function draw() {
+    const kAll = byM('KOSPI');
+    lineChart($('d-kospi'), kAll.slice(-5), { dashedLast: true });
+    lineChart($('d-sec'), kd('삼성전자').slice(-5), { dashedLast: true });
+    lineChart($('d-hynix'), kd('SK하이닉스').slice(-5), { dashedLast: true });
+    lineChart($('d-spx'), spx, { H: 170 }); lineChart($('d-nasdaq'), nas, { H: 170 });
+    hbar($('d-usbar'), D.us_top.filter(r => r.d3 !== '').map(r => ({ name: r.name, group: r.group, pct: +r.d3 })).sort((a, b) => b.pct - a.pct), { sub: 'group', height: 24 });
+
+    lineChart($('w-kospi'), kAll, { dashedLast: true });
+    lineChart($('w-nasdaq'), nas); lineChart($('w-spx'), spx);
+    lineChart($('w-sec'), kd('삼성전자'), { dashedLast: true }); lineChart($('w-hynix'), kd('SK하이닉스'), { dashedLast: true });
+    lineChart($('w-krw'), byM('KRW'));
+    hbar($('w-usbar'), D.us_top.filter(r => r.d2 !== '').map(r => ({ name: r.name, group: r.group, pct: +r.d2 })).sort((a, b) => b.pct - a.pct), { sub: 'group', height: 22 });
+    hbar($('w-usweek'), D.us_top.filter(r => r.d3 !== '').map(r => ({ name: r.name, group: r.group, pct: +r.d3 })).sort((a, b) => b.pct - a.pct), { sub: 'group', height: 22 });
+  }
+
+  // ---------- tabs ----------
+  const tabs = { d: [$('tab-d'), $('sec-d')], w: [$('tab-w'), $('sec-w')] };
+  function show(k) {
+    for (const [key, [b, s]] of Object.entries(tabs)) { const on = key === k; b.setAttribute('aria-selected', on); s.hidden = !on; }
+    try { localStorage.setItem('mk-tab', k); } catch (e) {}
+    draw();
+  }
+  $('tab-d').onclick = () => show('d'); $('tab-w').onclick = () => show('w');
+  let init = 'd'; try { init = localStorage.getItem('mk-tab') || 'd'; } catch (e) {}
+  show(init);
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(draw, 150); });
+}
+</script>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>renderReport({
+  "indices": [
+    {"date":"2026-10-29","market":"KOSPI","close":"5937.66","note":"-1.24%"},
+    {"date":"2026-10-30","market":"KOSPI","close":"5730.74","note":"-3.48% AI쇼크"},
+    {"date":"2026-11-02","market":"KOSPI","close":"5859.08","note":"+2.24% 반등"},
+    {"date":"2026-11-03","market":"KOSPI","close":"5648.79","note":"-3.59% 재급락"},
+    {"date":"2026-11-04","market":"KOSPI","close":"5786.13","note":"장중 09시 (+2.43%, 5,800 터치)"},
+    {"date":"2026-10-29","market":"NASDAQ","close":"26184.72","note":"-1.38%"},
+    {"date":"2026-10-30","market":"NASDAQ","close":"25437.00","note":"-2.86%"},
+    {"date":"2026-11-02","market":"NASDAQ","close":"25164.36","note":"-1.07%"},
+    {"date":"2026-11-03","market":"NASDAQ","close":"25373.00","note":"+0.83% 반도체 반등"},
+    {"date":"2026-10-29","market":"SPX","close":"7720.39","note":"-0.30%"},
+    {"date":"2026-10-30","market":"SPX","close":"7580.07","note":"-1.82%"},
+    {"date":"2026-11-02","market":"SPX","close":"7541.40","note":"-0.51%"},
+    {"date":"2026-11-03","market":"SPX","close":"7568.92","note":"+0.36%"},
+    {"date":"2026-10-30","market":"KRW","close":"1334.3","note":""},
+    {"date":"2026-11-02","market":"KRW","close":"1343.8","note":""},
+    {"date":"2026-11-03","market":"KRW","close":"1341.0","note":""}
+  ],
+  "kr_daily": [
+    {"date":"2026-10-29","name":"삼성전자","close":"232000","note":"-4.13%"},
+    {"date":"2026-10-30","name":"삼성전자","close":"225000","note":"-3.02%"},
+    {"date":"2026-11-02","name":"삼성전자","close":"229000","note":"+1.78%"},
+    {"date":"2026-11-03","name":"삼성전자","close":"219000","note":"-4.2%"},
+    {"date":"2026-11-04","name":"삼성전자","close":"227000","note":"장중 +3.65%"},
+    {"date":"2026-10-29","name":"SK하이닉스","close":"1526000","note":"+2.62%"},
+    {"date":"2026-10-30","name":"SK하이닉스","close":"1418000","note":"-7.08%"},
+    {"date":"2026-11-02","name":"SK하이닉스","close":"1472000","note":"+3.81%"},
+    {"date":"2026-11-03","name":"SK하이닉스","close":"1398000","note":"-5.03%"},
+    {"date":"2026-11-04","name":"SK하이닉스","close":"1475000","note":"장중 +5.5%"}
+  ],
+  "stocks": [
+    {"name":"코스피","a":"-3.59","b":"2.43","note":"5,648.79 → 5,786.13(장중)"},
+    {"name":"코스닥","a":"-4.08","b":"1.61","note":"704선 → 715(장중)"},
+    {"name":"삼성전자","a":"-4.20","b":"3.65","note":"반도체 · 11/4 227,000원"},
+    {"name":"SK하이닉스","a":"-5.03","b":"5.50","note":"반도체 · 11/4 1,475,000원(140만 회복)"}
+  ],
+  "us_top": [
+    {"name":"AMD","ticker":"AMD","group":"반도체","d2":"","d3":"3.65"},
+    {"name":"브로드컴","ticker":"AVGO","group":"반도체","d2":"-1.18","d3":"3.07"},
+    {"name":"마이크론","ticker":"MU","group":"반도체(메모리)","d2":"-5.35","d3":"2.58"},
+    {"name":"엔비디아","ticker":"NVDA","group":"반도체","d2":"-0.99","d3":"2.29"},
+    {"name":"팔란티어","ticker":"PLTR","group":"AI 인프라","d2":"","d3":"-1.65"},
+    {"name":"애플","ticker":"AAPL","group":"빅테크","d2":"-1.83","d3":"-1.90"},
+    {"name":"오라클","ticker":"ORCL","group":"AI 인프라","d2":"-8.76","d3":""},
+    {"name":"마벨","ticker":"MRVL","group":"반도체","d2":"-12.00","d3":""}
+  ],
+  "macro": [
+    {"key":"cpi","label":"한국 10월 CPI(전년비)","value":"2.8","unit":"%","note":"두 달째 2%대"},
+    {"key":"sox","label":"필라델피아 반도체(간밤)","value":"2.63","unit":"%","note":"AMD發 반등"},
+    {"key":"wti","label":"WTI 유가","value":"하락","unit":"","note":"미·이란 협상 기대(수치 미확인)"},
+    {"key":"krw","label":"원·달러(11/3 종가)","value":"1341.0","unit":"원","note":"소폭 하락"},
+    {"key":"base_rate","label":"한국 기준금리","value":"3.00","unit":"%","note":"10/22 동결"},
+    {"key":"kr_foreign","label":"외국인 11/3 순매도","value":"1.5","unit":"조원","note":"급락 주도"}
+  ],
+  "events": [
+    {"date":"2026-11-04(수) 밤","event":"미 ISM 서비스·ADP 고용 + ARM·QCOM·우버 실적","why":"오늘 밤 · 반도체 수요·경기 모멘텀"},
+    {"date":"2026-11-06(금)","event":"미 10월 고용보고서(NFP)","why":"연준 경로·금리 방향"},
+    {"date":"상시","event":"미 중간선거 개표 결과","why":"정책 불확실성 해소/변수"},
+    {"date":"2026-11 중","event":"연 수출 1조달러 달성 전망","why":"반도체·AI 서버 수출 호조"},
+    {"date":"2026-11-19","event":"엔비디아 실적(예정)","why":"AI 수익성 논란의 최종 시험대"},
+    {"date":"2026-12 FOMC","event":"미 추가 인상 여부","why":"지표 확인 후 · 매파 2명 인상 주장"}
+  ],
+  "issues": [
+    {"date":"2026-11-03","time":"장마감후","category":"실적","title":"AMD 어닝 서프라이즈 — 데이터센터 +97%·시간외 +8%","detail":"AMD 3분기 매출 $13.4B(+45% 사상최대)·데이터센터 +97%($8.5B)·조정 EPS $2.09, Q4 가이던스 약 $17B로 컨센 상회. 정규장 +3.65%, 시간외 +8%. 'AI 수요는 견조'를 재확인한 간밤 최대 호재.","impact":"2","affected":"반도체 · AI 밸류체인"},
+    {"date":"2026-11-03","time":"미국·밤","category":"해외증시","title":"미 반도체 반등 · SOX +2.63% · 나스닥 +0.83%","detail":"엔비디아 +2.29%·브로드컴 +3.07%·마이크론 +2.58% 동반 강세. S&P 3거래일 연속 하락 끝에 +0.36% 반등. 다우만 애플 약세에 -0.38%.","impact":"1","affected":"반도체 · 성장주"},
+    {"date":"2026-11-04","time":"09:00","category":"수급","title":"코스피 +2.43% 급반등 · 5,800선 회복","detail":"어제 -3.59%(5,648) 급락 하루 만에 5,786(09시, +2.43%)로 급반등, 장중 5,800선 터치. 코스닥도 +1.61%. 간밤 미 반도체 반등·AMD 서프라이즈가 투심 회복.","impact":"2","affected":"코스피 전반 · 반도체"},
+    {"date":"2026-11-04","time":"장중","category":"수급","title":"삼전·SK하이닉스 반등 · 외국인 순매수 전환 조짐","detail":"삼성전자 227,000원(+3.65%)·SK하이닉스 1,475,000원(+5.5%, 140만 회복). 외국인이 어제 -1.5조 매도에서 오늘 장 초반 +978억 순매수로 전환 조짐(개인·기관은 매도).","impact":"2","affected":"반도체 · 코스피 수급"},
+    {"date":"2026-11-03","time":"장마감후","category":"실적","title":"팔란티어·애플 '밸류 눈높이' 경계","detail":"팔란티어는 매출 +96%·美상업 +148% 호실적에도 신규 부킹(TCV +6%) 둔화에 -1.65%. 애플도 마진 우려로 -1.9%. 'AI 밸류 눈높이'가 높아진 데 따른 차익실현 경계.","impact":"-1","affected":"AI 인프라 · 빅테크"},
+    {"date":"2026-11-04","time":"일정·부동산","category":"정책","title":"미 중간선거 개표 중 · 대통령 부동산 발언","detail":"미 중간선거 개표 진행 중(결과가 변수). 오늘 밤 ISM 서비스·ARM/QCOM 실적. 부동산은 신규 통계 없이 이재명 대통령이 '서울 주요지역 실거래가 하락'을 지적하며 통계 전달 방식에 문제 제기(공식 지표는 90주 연속 상승과 괴리).","impact":"0","affected":"지수 전반 · 내수·건설"}
+  ]
+});</script>
+</body>
+</html>
