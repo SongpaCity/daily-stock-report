@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>증시 리포트 — 2026년 11월 5일</title>
+<style>
+:root { --color-fg:#16213A; --color-fg-muted:#6A7290; --color-panel:#fff; --color-border-line:#DDE1E8; --cds-chart-grid:#EBEDF2; --cds-chart-reference:#B9BFCC; --paper:#F6F7F9;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme:dark; --color-fg:#E8EAF0; --color-fg-muted:#9AA2B8; --color-panel:#1A1E28; --color-border-line:#2C3240; --cds-chart-grid:#262B37; --cds-chart-reference:#4A5265; --paper:#12151C; } }
+:root[data-theme="dark"] { color-scheme:dark; --color-fg:#E8EAF0; --color-fg-muted:#9AA2B8; --color-panel:#1A1E28; --color-border-line:#2C3240; --cds-chart-grid:#262B37; --cds-chart-reference:#4A5265; --paper:#12151C; }
+html { scroll-padding-top:env(safe-area-inset-top,0px); }
+body { margin:0; background:var(--paper); color:var(--color-fg); -webkit-text-size-adjust:100%; }
+.wrap { padding:1.5rem 1.1rem 3rem; }
+</style>
+</head>
+<body><div class="wrap">
+<style>
+.mk { --ink: var(--color-fg, #16213A); --ink2: var(--color-fg-muted, #6A7290); --panel: var(--color-panel, #fff); --line: var(--color-border-line, #DDE1E8); --grid: var(--cds-chart-grid, #EBEDF2); --ref: var(--cds-chart-reference, #B9BFCC);
+  --up: #D23C2F; --down: #2962C9; --warn: #D99A00; --font: var(--font-anthropic-sans, "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", -apple-system, sans-serif);
+  font-family: var(--font); max-width: 70rem; margin-inline: auto; font-variant-numeric: tabular-nums; color: var(--ink); line-height: 1.55; }
+@media (prefers-color-scheme: dark) { .mk { --up: #F0655A; --down: #6D9BF0; --warn: #E8B33C; } }
+.mk h1 { font-size: 1.6rem; font-weight: 700; margin: 0 0 .25rem; letter-spacing: -.01em; line-height: 1.25; }
+.mk .kicker { color: var(--ink2); font-size: .82rem; margin: 0 0 .4rem; }
+.mk .lead { color: var(--ink2); margin: 0 0 1rem; max-width: 48rem; }
+.mk .tabs { display: flex; gap: .4rem; margin: 1rem 0 1.25rem; border-bottom: 2px solid var(--line); }
+.mk .tabs button { font: inherit; font-weight: 600; background: none; border: 0; border-bottom: 3px solid transparent; margin-bottom: -2px; padding: .5rem .9rem; color: var(--ink2); cursor: pointer; }
+.mk .tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.mk .tabs button:focus-visible { outline: 2px solid var(--down); outline-offset: 2px; border-radius: 4px; }
+.mk section[hidden] { display: none; }
+.mk h2 { font-size: 1.2rem; margin: 2rem 0 .25rem; padding-left: .6rem; border-left: 4px solid var(--ink); line-height: 1.3; }
+.mk h3.sect { font-size: 1rem; margin: 1.4rem 0 .25rem; }
+.mk .sub { color: var(--ink2); font-size: .9rem; margin: 0 0 .9rem; max-width: 50rem; }
+.mk .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: .7rem; }
+.mk .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .8rem .9rem; }
+.mk .tile .lbl { color: var(--ink2); font-size: .76rem; }
+.mk .tile .big { font-size: 1.7rem; font-weight: 700; line-height: 1.15; letter-spacing: -.02em; }
+.mk .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: .9rem; }
+.mk .grid-sm { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr)); gap: .6rem; }
+.mk .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem; position: relative; min-width: 0; }
+.mk .card h3 { font-size: 1rem; margin: 0 0 .1rem; }
+.mk .card .note { color: var(--ink2); font-size: .78rem; margin: 0 0 .5rem; }
+.mk .chart { width: 100%; position: relative; min-height: 200px; }
+.mk .up { color: var(--up); } .mk .down { color: var(--down); } .mk .flat { color: var(--ink2); }
+.mk .sm { padding: .7rem .8rem; }
+.mk .sm .nm { display: flex; justify-content: space-between; gap: 4px; font-weight: 600; font-size: .9rem; }
+.mk .sm .nm small { color: var(--ink2); font-weight: 400; }
+.mk .sm .pct { font-size: 1.25rem; font-weight: 700; margin: 1px 0 3px; letter-spacing: -.02em; }
+.mk .sm .tag { color: var(--ink2); font-size: .72rem; line-height: 1.3; }
+.mk .spark { width: 100%; height: 46px; display: block; }
+.mk .tip { position: absolute; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.14); padding: 4px 8px; font-size: .78rem; pointer-events: none; display: none; white-space: nowrap; z-index: 2; }
+.mk .tip .d { color: var(--ink2); }
+.mk table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.mk th, .mk td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.mk th { color: var(--ink2); font-weight: 500; font-size: .76rem; }
+.mk td.num, .mk th.num { text-align: right; white-space: nowrap; }
+.mk .tw { overflow-x: auto; }
+.mk .flow { display: grid; gap: .5rem; }
+.mk .flow .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: .5rem; }
+.mk .fbox { border-radius: 8px; padding: .7rem .85rem; border: 1px solid var(--line); background: var(--panel); }
+.mk .fbox b { display: block; margin-bottom: 2px; font-size: .93rem; }
+.mk .fbox .v { font-size: 1.05rem; font-weight: 700; }
+.mk .fbox small { color: var(--ink2); font-size: .78rem; display: block; line-height: 1.45; }
+.mk .g { background: color-mix(in srgb, var(--up) 9%, var(--panel)); } .mk .k { background: color-mix(in srgb, var(--warn) 14%, var(--panel)); }
+.mk .arrow { text-align: center; color: var(--ink2); font-size: 1.2rem; line-height: 1; }
+.mk .legend { display: flex; gap: 1rem; font-size: .76rem; color: var(--ink2); margin-top: .4rem; flex-wrap: wrap; }
+.mk .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; border: 1px solid var(--line); }
+.mk .scen { border-left: 4px solid var(--line); }
+.mk .scen.bull { border-left-color: var(--up); } .mk .scen.bear { border-left-color: var(--down); } .mk .scen.base { border-left-color: var(--warn); }
+.mk ul { margin: 6px 0 0; padding-left: 1.1rem; font-size: .9rem; } .mk li { margin: 2px 0; }
+.mk .caveat { color: var(--ink2); font-size: .78rem; line-height: 1.55; margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.mk .colornote { font-size: .76rem; color: var(--ink2); margin: 0 0 1rem; }
+.mk .colornote i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin: 0 3px 0 8px; vertical-align: -1px; }
+.mk .news { background: color-mix(in srgb, var(--down) 7%, var(--panel)); border: 1px solid var(--line); border-left: 4px solid var(--down); border-radius: 10px; padding: .85rem 1rem; margin: 1rem 0 0; font-size: .92rem; }
+.mk .news b { color: var(--ink); }
+.mk .tl { display: grid; gap: .55rem; }
+.mk .ev { display: grid; grid-template-columns: 5.2rem 1fr 6.5rem; gap: .8rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .75rem .9rem; align-items: start; }
+@media (max-width: 40rem) { .mk .ev { grid-template-columns: 1fr; gap: .3rem; } }
+.mk .ev .when { font-size: .78rem; color: var(--ink2); line-height: 1.35; }
+.mk .ev .when b { display: block; color: var(--ink); font-size: .85rem; }
+.mk .ev .cat { display: inline-block; font-size: .7rem; border: 1px solid var(--line); border-radius: 999px; padding: 0 .5rem; color: var(--ink2); margin-bottom: 3px; }
+.mk .ev .ttl { font-weight: 600; font-size: .95rem; margin: 0 0 2px; }
+.mk .ev .dt { font-size: .85rem; color: var(--ink2); margin: 0; }
+.mk .ev .aff { font-size: .74rem; color: var(--ink2); margin-top: 4px; }
+.mk .imp { text-align: right; }
+.mk .imp .lab { font-size: .72rem; color: var(--ink2); }
+.mk .imp .bar { display: flex; height: 10px; border-radius: 3px; overflow: hidden; background: var(--grid); margin: 3px 0 2px; position: relative; }
+.mk .imp .bar i { position: absolute; top: 0; bottom: 0; }
+.mk .imp .bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--ref); }
+.mk .imp .sc { font-weight: 700; font-size: .95rem; }
+.mk svg text { font-family: inherit; }
+</style>
+
+<div class="mk">
+  <p class="kicker">2026년 11월 5일(목) 작성 · 어제(11/4) 종가 → 오늘(11/5) 낮 장중 + 오늘 밤 미국장 전망 기준</p>
+  <h1>증시 리포트 — 11월 5일</h1>
+  <p class="lead" id="lead"></p>
+  <p class="colornote">등락 색상은 국내 관행을 따릅니다 <i style="background:var(--up)"></i>상승 <i style="background:var(--down)"></i>하락</p>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-d" aria-selected="true" aria-controls="sec-d">오늘 (11/5)</button>
+    <button role="tab" id="tab-w" aria-selected="false" aria-controls="sec-w">최근 흐름 (10/30~11/5)</button>
+  </div>
+
+  <!-- ===================== DAILY (오늘 11/5) ===================== -->
+  <section id="sec-d" role="tabpanel" aria-labelledby="tab-d">
+    <div class="tiles" id="d-tiles"></div>
+
+    <div class="news" id="d-news"></div>
+
+    <h2>1. 오늘 주가 — 어제(11/4) 종가 대비 오늘(11/5)</h2>
+    <p class="sub">간밤 미국은 중간선거 '블루웨이브'에 다우가 +3.03%(44년來 최대) 폭등했지만, 데이터센터 규제 우려로 반도체만 급락했습니다. 그 충격에 오늘(11/5) 코스피는 장중 -5%대까지 급락(저점 5,386)하며 매도 사이드카가 발동된 '검은 목요일'입니다. 오늘 값은 낮 장중가이며 마감가가 아닙니다.</p>
+    <div class="grid">
+      <div class="card"><h3>코스피</h3><p class="note">종가, pt · 11/5는 장중(점선)</p><div class="chart" id="d-kospi"></div></div>
+      <div class="card"><h3>삼성전자</h3><p class="note">원 · 11/5는 장중(점선)</p><div class="chart" id="d-sec"></div></div>
+      <div class="card"><h3>SK하이닉스</h3><p class="note">원 · 11/5는 장중(점선)</p><div class="chart" id="d-hynix"></div></div>
+    </div>
+    <div class="card" style="margin-top:.9rem"><h3>주요 종목 — 어제(11/4) 종가 · 오늘(11/5) 장중</h3><p class="note">% · 11/5는 낮 장중 · 확인된 종목만</p><div class="tw"><table><thead><tr><th>종목</th><th class="num">11/4(종가)</th><th class="num">11/5(장중)</th><th>흐름</th></tr></thead><tbody id="d-stocks"></tbody></table></div></div>
+
+    <h2>2. 오늘(11/4 밤~11/5) 뉴스·이슈와 영향도</h2>
+    <p class="sub">어제 미국장 마감·중간선거부터 오늘 국내장까지 순서대로 정리했습니다. 영향도는 -3(강한 악재)부터 +3(강한 호재)까지, 코스피 기준 제 주관적 점수입니다. 막대가 가운데 선 왼쪽이면 악재, 오른쪽이면 호재입니다.</p>
+    <div class="tl" id="d-issues"></div>
+
+    <h2>3. 오늘 밤 미국장 — 간밤(11/4) 마감과 블루웨이브</h2>
+    <p class="sub">간밤 미국장(11/4)은 민주당 상·하원 장악에 정치 불확실성이 해소되며 다우 +3.03%·빅테크(아마존+7·애플+6)가 급등했습니다. 그러나 데이터센터 규제 우려로 반도체(엔비디아 -3.12%·마이크론 -7%)만 역행 급락 — '빅테크↑ 반도체↓' 양극화입니다. 왼쪽은 간밤 미 주요 종목 등락률입니다.</p>
+    <div class="grid">
+      <div class="card"><h3>간밤(11/4) 미 주요 종목 등락률</h3><p class="note">% · 확인된 종목만</p><div class="chart" id="d-usbar"></div></div>
+      <div class="card"><h3>미국 지수 (간밤 11/4 마감)</h3><p class="note">종가, pt · 현지시간</p><div class="chart" id="d-spx"></div><div class="chart" id="d-nasdaq" style="margin-top:.5rem"></div></div>
+    </div>
+
+    <h2>4. 오늘의 판단</h2>
+    <div class="grid" id="d-verdict"></div>
+  </section>
+
+  <!-- ===================== WEEKLY (맥락) ===================== -->
+  <section id="sec-w" role="tabpanel" aria-labelledby="tab-w" hidden>
+    <div class="tiles" id="w-tiles"></div>
+
+    <h2>1. 지수 흐름 — 국내 vs 미국</h2>
+    <p class="sub">코스피는 28일 사상 첫 6,000선 뒤 'AI 수익성' 쇼크로 급등락을 반복하다 오늘 11/5 '블루웨이브 AI 규제' 우려에 -5%대 급락했습니다. 반면 미국 지수는 중간선거 해소에 급등해 '다우 +3% vs 코스피 -5%' 디커플링이 나타났습니다.</p>
+    <div class="grid">
+      <div class="card"><h3>코스피</h3><p class="note">종가, pt · 11/5는 장중(점선)</p><div class="chart" id="w-kospi"></div></div>
+      <div class="card"><h3>나스닥 종합</h3><p class="note">종가, pt · 현지시간</p><div class="chart" id="w-nasdaq"></div></div>
+      <div class="card"><h3>S&amp;P 500</h3><p class="note">종가, pt · 현지시간</p><div class="chart" id="w-spx"></div></div>
+    </div>
+
+    <h2>2. 반도체 3인방 · 환율</h2>
+    <p class="sub">반도체 대형주는 'AI 수익성'에 이어 'AI 인프라 규제' 우려까지 겹쳐 오늘 급락했습니다. SK하이닉스 -6%·삼성전자 -4.8%. 원·달러는 블루웨이브發 달러 약세로 1,338원으로 내렸습니다.</p>
+    <div class="grid">
+      <div class="card"><h3>삼성전자</h3><p class="note">원 · 11/5는 장중(점선)</p><div class="chart" id="w-sec"></div></div>
+      <div class="card"><h3>SK하이닉스</h3><p class="note">원 · 11/5는 장중(점선)</p><div class="chart" id="w-hynix"></div></div>
+      <div class="card"><h3>원·달러 환율</h3><p class="note">원 · 서울외국환중개 기준</p><div class="chart" id="w-krw"></div></div>
+    </div>
+
+    <h2>3. 미국 주요 종목 — 11/3 · 11/4 하루 등락률</h2>
+    <p class="sub">왼쪽은 11/3(화), 오른쪽은 11/4(수) 하루 등락률(확인된 종목만). 11/4엔 빅테크가 급등한 반면 반도체는 규제 우려로 급락하는 양극화가 뚜렷했습니다.</p>
+    <div class="grid">
+      <div class="card"><h3>11/3 등락률</h3><p class="note">%</p><div class="chart" id="w-usbar"></div></div>
+      <div class="card"><h3>11/4 등락률</h3><p class="note">%</p><div class="chart" id="w-usweek"></div></div>
+    </div>
+
+    <h2>4. 최근 흐름 요약 — '블루웨이브 AI 규제' 역설</h2>
+    <p class="sub">사상 첫 6,000선 뒤 'AI 수익성' 롤러코스터가 이어지는 가운데, 이번엔 중간선거 결과發 'AI 인프라 규제' 우려가 반도체 비중 큰 한국만 직격했습니다. 유가·금리·환율 안정은 완충 요인입니다.</p>
+    <div class="card flow" id="w-flow"></div>
+
+    <h2>5. 앞으로의 추세 — 세 가지 시나리오</h2>
+    <p class="sub">"AI 인프라 규제 우려가 반도체를 눌렀지만, 규제 과도론·유가·금리 안정이 반등 변수"라는 구도입니다.</p>
+    <div class="grid" id="w-scen"></div>
+    <div class="card" style="margin-top:.9rem"><h3>체크해야 할 일정</h3><p class="note">이벤트와 왜 중요한지</p><div class="tw"><table><thead><tr><th>날짜</th><th>이벤트</th><th>관전 포인트</th></tr></thead><tbody id="w-events"></tbody></table></div></div>
+  </section>
+
+  <p class="caveat">데이터 출처: 코스피·국내 종목은 11/5 낮 장중 보도(뉴스1·아시아경제·디지털데일리 등), 어제(11/4) 종가는 마감 보도(위키트리·미디어펜 등), 미국 지수·종목·선거는 간밤(11/4 현지) 보도(TheStreet·Motley Fool·CNBC 등), 부동산·거시는 관련 보도(뉴스핌·잡포스트 등). 오늘(11/5) 코스피·개별 종목 수치는 낮 장중값으로 마감가와 다릅니다. ADP 고용·WTI 정확 종가·코스닥 11/5·삼성전자 11/4 정확 종가 등 일부는 미확인·역산치입니다. 미 FOMC는 현 금리 3.75~4.00%로 '동결 vs 인상' 국면(인하 아님)입니다. 영향도 점수는 제 주관적 판단입니다. 이 리포트는 정보 정리 목적이며 투자 권유가 아닙니다.</p>
+  <div class="tip" id="tip"></div>
+</div>
+
+<script>
+function renderReport(D) {
+  const fmtP = d3.format('+.1f'), fmtP2 = d3.format('+.2f'), fmtN = d3.format(','), fmtD = d3.utcFormat('%-m/%-d');
+  const $ = id => document.getElementById(id);
+  const tip = $('tip');
+  const cls = v => v > 0.05 ? 'up' : v < -0.05 ? 'down' : 'flat';
+  const col = v => v >= 0 ? 'var(--up)' : 'var(--down)';
+  const root = document.querySelector('.mk');
+
+  function showTip(ev, html) {
+    const r = root.getBoundingClientRect();
+    tip.innerHTML = html; tip.style.display = 'block';
+    let x = ev.clientX - r.left + 12; const y = ev.clientY - r.top - 36;
+    const w = tip.offsetWidth; if (x + w > r.width) x = ev.clientX - r.left - w - 12;
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => tip.style.display = 'none';
+
+  function lineChart(el, rows, { color = 'var(--ink)', dashedLast = false, H = 210 } = {}) {
+    if (!el) return; el.innerHTML = '';
+    const W = el.clientWidth || 320, m = { t: 18, r: 58, b: 26, l: 8 };
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const pts = rows.map(r => ({ d: new Date(r.date), v: Number(r.close), note: r.note || '' }));
+    const x = d3.scalePoint(pts.map(p => p.d), [m.l, W - m.r]);
+    const ext = d3.extent(pts, p => p.v), pad = (ext[1] - ext[0]) * 0.15 || 1;
+    const y = d3.scaleLinear([ext[0] - pad, ext[1] + pad], [H - m.b, m.t]);
+    const g = svg.append('g'); const yt = y.ticks(4);
+    g.selectAll('line.grid').data(yt).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--grid)');
+    g.selectAll('text.yl').data(yt).join('text').attr('x', W - m.r + 6).attr('y', y).attr('dy', '0.35em').attr('fill', 'var(--ink2)').attr('font-size', 11).text(fmtN);
+    g.selectAll('text.xl').data(pts).join('text').attr('x', p => x(p.d)).attr('y', H - 7).attr('text-anchor', 'middle').attr('fill', 'var(--ink2)').attr('font-size', 11).text(p => fmtD(p.d));
+    const line = d3.line().x(p => x(p.d)).y(p => y(p.v));
+    g.append('path').attr('d', line(dashedLast ? pts.slice(0, -1) : pts)).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    if (dashedLast) g.append('path').attr('d', line(pts.slice(-2))).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.2).attr('stroke-dasharray', '4 4');
+    g.selectAll('circle').data(pts).join('circle').attr('cx', p => x(p.d)).attr('cy', p => y(p.v)).attr('r', 3.5).attr('fill', color);
+    const last = pts[pts.length - 1], first = pts[0], lo = pts.reduce((a, p) => p.v < a.v ? p : a, pts[0]);
+    g.append('text').attr('x', x(last.d)).attr('y', y(last.v) - 9).attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--ink)').attr('font-weight', 600).text(fmtN(last.v));
+    g.append('text').attr('x', x(first.d)).attr('y', y(first.v) - 9).attr('text-anchor', 'start').attr('font-size', 11).attr('fill', 'var(--ink2)').text(fmtN(first.v));
+    if (lo !== last && lo !== first) g.append('text').attr('x', x(lo.d)).attr('y', y(lo.v) + 14).attr('text-anchor', 'middle').attr('font-size', 10).attr('fill', 'var(--down)').text(fmtN(lo.v));
+    svg.on('mousemove', ev => {
+      const [mx] = d3.pointer(ev); let best = pts[0];
+      for (const p of pts) if (Math.abs(x(p.d) - mx) < Math.abs(x(best.d) - mx)) best = p;
+      const prev = pts[pts.indexOf(best) - 1]; const chg = prev ? ` (${fmtP2((best.v / prev.v - 1) * 100)}%)` : '';
+      g.selectAll('circle').attr('r', p => p === best ? 5.5 : 3.5);
+      showTip(ev, `<div class="d">${fmtD(best.d)}${best.note ? ' · ' + best.note : ''}</div><div>${fmtN(best.v)}${chg}</div>`);
+    }).on('mouseleave', () => { hideTip(); g.selectAll('circle').attr('r', 3.5); });
+  }
+
+  function hbar(el, rows, { key = 'name', val = 'pct', sub = null, height = 24 } = {}) {
+    if (!el) return; el.innerHTML = '';
+    const W = el.clientWidth || 320, H = rows.length * height + 30, lw = Math.min(150, W * 0.32), m = { t: 6, r: 48, b: 22, l: lw };
+    el.style.minHeight = H + 'px';
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const ext = d3.extent(rows, r => r[val]); const lo = Math.min(0, ext[0]), hi = Math.max(0, ext[1]);
+    const x = d3.scaleLinear([lo, hi], [m.l, W - m.r]).nice();
+    const y = d3.scaleBand(rows.map(r => r[key]), [m.t, H - m.b]).padding(0.25);
+    const g = svg.append('g');
+    g.selectAll('line.grid').data(x.ticks(5)).join('line').attr('y1', m.t).attr('y2', H - m.b).attr('x1', x).attr('x2', x).attr('stroke', 'var(--grid)');
+    g.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--ref)');
+    g.selectAll('text.xl').data(x.ticks(5)).join('text').attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--ink2)').text(v => fmtP(v) + '%');
+    g.selectAll('rect').data(rows).join('rect').attr('x', r => Math.min(x(0), x(r[val]))).attr('width', r => Math.abs(x(r[val]) - x(0))).attr('y', r => y(r[key])).attr('height', y.bandwidth()).attr('rx', 3).attr('fill', r => col(r[val]))
+      .on('mousemove', (ev, r) => showTip(ev, `<div class="d">${r[key]}${sub && r[sub] ? ' · ' + r[sub] : ''}</div><div>${fmtP2(r[val])}%</div>`)).on('mouseleave', hideTip);
+    g.selectAll('text.nm').data(rows).join('text').attr('x', m.l - 6).attr('y', r => y(r[key]) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--ink)').text(r => r[key]);
+    g.selectAll('text.vl').data(rows).join('text').attr('x', r => r[val] >= 0 ? x(r[val]) + 4 : x(r[val]) - 4).attr('y', r => y(r[key]) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', r => r[val] >= 0 ? 'start' : 'end').attr('font-size', 11).attr('fill', 'var(--ink2)').text(r => fmtP(r[val]) + '%');
+  }
+
+  // ---------- derived ----------
+  const byM = m => D.indices.filter(r => r.market === m).sort((a, b) => a.date < b.date ? -1 : 1);
+  const kAt = d => { const r = byM('KOSPI').find(r => r.date === d); return r ? Number(r.close) : null; };
+  const macro = Object.fromEntries(D.macro.map(r => [r.key, r]));
+  const mv = k => macro[k] ? fmtN(Number(macro[k].value)) : '—';
+  const kd = n => D.kr_daily.filter(r => r.name === n).sort((a, b) => a.date < b.date ? -1 : 1);
+  const k30 = kAt('2026-10-30'), k03 = kAt('2026-11-03'), k04 = kAt('2026-11-04'), k05 = kAt('2026-11-05');
+  const nas = byM('NASDAQ'), spx = byM('SPX');
+  const wkN = (Number(nas[nas.length - 1].close) / Number(nas[0].close) - 1) * 100, wkS = (Number(spx[spx.length - 1].close) / Number(spx[0].close) - 1) * 100;
+
+  $('lead').textContent = `간밤 미국은 중간선거 '블루웨이브'(민주당 상·하원 장악)로 정치 불확실성이 해소되며 다우가 +3.03%(44년來 최대) 폭등했습니다. 그러나 데이터센터 밀집지의 민주당 승리가 'AI 인프라 규제 강화' 우려를 키워 반도체만 역행 급락(엔비디아 -3.12%·마이크론 -7%)했고, 이 충격이 반도체 비중 큰 한국을 직격했습니다. 오늘(11/5) 코스피는 장중 -5%대까지 급락(저점 5,386)하며 매도 사이드카가 발동된 '검은 목요일', SK하이닉스 -6%·삼성전자 -4.8%로 밀렸습니다(현재 ${fmtP2((k05 / k04 - 1) * 100)}%). 외국인이 1.2조 넘게 순매도 중입니다. 다우 +3%와 코스피 -5%의 디커플링입니다. 유가·금리·환율 안정은 완충 요인입니다. (오늘 수치는 낮 장중값)`;
+
+  $('d-news').innerHTML = `<b>📰 주요 뉴스</b> — 간밤 미 중간선거 '블루웨이브'에 다우 <b>+3.03%</b>(44년來 최대)·빅테크 급등(아마존+7·애플+6). 그러나 데이터센터 밀집지 민주 승리 → <b>'AI 인프라 규제' 우려</b>로 반도체만 역행 급락(엔비디아 -3.12·마이크론 -7). 그 충격에 오늘 코스피 <b>'검은 목요일' 장중 -5%대·매도 사이드카</b>, SK하이닉스 -6%·삼성전자 -4.8%, 외국인 1.2조+ 매도. 다우 +3% vs 코스피 -5% 디커플링. 원·달러 1,338원(달러 약세). 부동산 신규 소식 없음. <span style="color:var(--ink2)">(머니투데이·TheStreet·뉴스1 11/4~5 보도)</span>`;
+
+  const tile = (lbl, v, sub, isPct = true) => `<div class="tile"><div class="lbl">${lbl}</div><div class="big ${isPct ? cls(v) : ''}">${isPct ? fmtP2(v) + '%' : v}</div><div class="lbl">${sub}</div></div>`;
+  $('d-tiles').innerHTML =
+    tile('코스피 11/5 장중', (k05 / k04 - 1) * 100, "5,449 안팎 · 오전 저점 -5.23% 사이드카") +
+    tile('코스닥 11/5 장중', -4.0, '686 안팎 · 동반 급락') +
+    tile('SK하이닉스 11/5', -6.30, '1,308,000원 · 반도체 직격') +
+    tile('간밤 다우', 3.03, '53,356 · 블루웨이브 44년來 최대', true) +
+    tile('외국인 11/5 장중', '-1.2조', '반도체 집중 매도', false);
+  $('w-tiles').innerHTML =
+    tile('코스피 · 10/30 → 11/5 장중', (k05 / k30 - 1) * 100, '10/28 고점 6,012 대비 ' + fmtP(((k05 / 6012.44) - 1) * 100) + '%') +
+    tile('나스닥 · 주간', wkN, '11/4 +1.40% (반도체는 역행)') +
+    tile('S&P 500 · 주간', wkS, '11/4 +1.58% · 블루웨이브') +
+    tile('간밤 SOX', -4.0, 'AI 인프라 규제 우려 직격', true) +
+    tile('외국인 11/4', '-2.5조', '대량 순매도(개인·기관 방어)', false);
+
+  // ---------- daily: stocks table ----------
+  const tb = $('d-stocks'); tb.innerHTML = '';
+  const rowsD = D.stocks.map(r => ({ name: r.name, a: r.a === '' ? null : +r.a, b: r.b === '' ? null : +r.b, note: r.note }));
+  rowsD.forEach(r => {
+    const tr = document.createElement('tr');
+    const f = v => v == null ? '<td class="num flat">—</td>' : `<td class="num ${cls(v)}">${fmtP2(v)}%</td>`;
+    const flow = r.a != null && r.b != null ? (r.a > 0 && r.b < 0 ? '상승 후 급락' : r.a < 0 && r.b < 0 ? '이틀 연속 하락' : r.a < 0 && r.b > 0 ? '하락 후 반등' : r.a > 0 && r.b > 0 ? '이틀 연속 상승' : '혼조') : (r.a != null ? (r.a > 0 ? '어제 상승' : '어제 하락') : r.note);
+    tr.innerHTML = `<td>${r.name}<br><small style="color:var(--ink2)">${r.note}</small></td>${f(r.a)}${f(r.b)}<td>${flow}</td>`;
+    tb.appendChild(tr);
+  });
+
+  // ---------- daily: issues timeline ----------
+  const tl = $('d-issues'); tl.innerHTML = '';
+  D.issues.forEach(r => {
+    const s = Number(r.impact); const w = Math.abs(s) / 3 * 50;
+    const label = s <= -3 ? '강한 악재' : s <= -2 ? '악재' : s < 0 ? '약한 악재' : s === 0 ? '중립' : s < 2 ? '약한 호재' : s < 3 ? '호재' : '강한 호재';
+    const div = document.createElement('div'); div.className = 'ev';
+    div.innerHTML = `<div class="when"><b>${fmtD(new Date(r.date))}</b>${r.time}</div>
+      <div><span class="cat">${r.category}</span><p class="ttl"></p><p class="dt"></p><div class="aff">영향 종목·업종: <span></span></div></div>
+      <div class="imp"><div class="lab">코스피 영향도</div><div class="bar"><i style="background:${col(s)};${s >= 0 ? 'left:50%' : 'right:50%'};width:${w}%"></i></div><div class="sc ${cls(s)}">${s > 0 ? '+' : ''}${s} · ${label}</div></div>`;
+    div.querySelector('.ttl').textContent = r.title; div.querySelector('.dt').textContent = r.detail; div.querySelector('.aff span').textContent = r.affected;
+    tl.appendChild(div);
+  });
+
+  // ---------- daily: verdict ----------
+  $('d-verdict').innerHTML = `
+    <div class="card scen base"><h3>오늘 한 줄</h3><p class="note">'블루웨이브 AI 규제' 역설 — 미 지수 급등에도 코스피만 급락</p>
+      <ul><li>중간선거 불확실성 해소로 미 지수는 급등(다우 +3%)했지만, 데이터센터 규제 우려가 반도체를 눌러 반도체 비중 큰 코스피만 -5%대 급락. 전형적 디커플링</li><li>SK하이닉스 -6%·삼성전자 -4.8%, 외국인이 어제 -2.5조에 이어 오늘도 1.2조+ 순매도. 매도 사이드카 발동</li><li>완충은 유가 급락·미 10년물 4.92%·원화 강세. 규제 우려가 '과도'로 판명되면 되돌림 여지. 오늘 밤 미국장·내일 고용이 분수령</li></ul></div>
+    <div class="card scen bear"><h3>체크 (악재 쪽)</h3><p class="note">이 중 겹치면 추가 하락</p>
+      <ul><li>'AI 인프라 규제'가 구체적 입법·행정으로 가시화</li><li>외국인 매도 지속(어제 -2.5조·오늘 -1.2조)</li><li>퀄컴 가이던스式 메모리·스마트폰 둔화 우려 확산</li></ul></div>
+    <div class="card scen bull"><h3>체크 (호재 쪽)</h3><p class="note">이 중 나오면 반등</p>
+      <ul><li>'규제 우려 과도론'에 저가매수 유입 + 반도체 과매도 반발</li><li>외국인 매도 진정 + 미 빅테크 강세 낙수효과</li><li>유가·금리·환율 안정 지속 + 11/6 고용 완만</li></ul></div>`;
+
+  // ---------- weekly: flow + scenarios + events ----------
+  $('w-flow').innerHTML = `
+    <div class="row">
+      <div class="fbox g"><b>중간선거 '블루웨이브'</b><small>민주당 상·하원 장악(20년來 처음). 정치 불확실성 해소로 다우 <span class="v">+3.03%</span>(44년來 최대)·빅테크 급등(아마존+7·애플+6)</small></div>
+      <div class="fbox k"><b>AI 인프라 규제 우려</b><small>데이터센터 밀집지(텍사스·조지아) 민주 승리 → 'AI 인프라 규제 강화' 전망. 반도체만 역행 급락(엔비디아 -3.12·마이크론 -7·SOX <span class="v">-4%</span>)</small></div>
+      <div class="fbox k"><b>한국 반도체 직격</b><small>반도체 비중 큰 코스피가 미 지수 급등과 디커플링. 오늘 장중 -5%대·매도 사이드카, SK하이닉스 -6%</small></div>
+    </div><div class="arrow">↓</div>
+    <div class="row">
+      <div class="fbox k"><b>외국인 대량 매도</b><small>어제 코스피 외국인 <span class="v">-2.5조</span> 순매도에 이어 오늘도 1.2조+ 매도. 개인·기관이 방어하나 역부족</small></div>
+      <div class="fbox k"><b>퀄컴 가이던스 쇼크</b><small>퀄컴 다음 분기 가이던스 컨센 하회(시간외 -7%)·ARM 신중. 메모리 공급난發 스마트폰 둔화 우려</small></div>
+    </div><div class="arrow">↓</div>
+    <div class="row">
+      <div class="fbox g"><b>유가·금리 하락</b><small>WTI 급락(중동 평화 기대)·미 10년물 <span class="v">${mv('ust10y')}</span>%(블루웨이브 하락). 금리 부담 완화</small></div>
+      <div class="fbox g"><b>원화 강세</b><small>원·달러 <span class="v">${mv('krw')}</span>원으로 하락(달러 약세). 외국인 환차익 측면 완충</small></div>
+    </div><div class="arrow">↓</div>
+    <div class="row"><div class="fbox" style="text-align:center"><b>다우 +3% vs 코스피 -5% 디커플링 · 'AI 규제' 우려가 반도체 비중 큰 한국만 직격</b><small>미 정치 불확실성은 해소됐으나 AI 인프라 규제 우려가 새 악재로. 규제 과도론·유가·금리 안정이 되돌림 변수</small></div></div>
+    <div class="legend"><span><i style="background:color-mix(in srgb, var(--up) 25%, var(--panel))"></i>호재·완충</span><span><i style="background:color-mix(in srgb, var(--warn) 40%, var(--panel))"></i>쇼크·부담</span></div>`;
+  $('w-scen').innerHTML = `
+    <div class="card scen bear"><h3>조정 심화 (규제 현실화)</h3><p class="note">조건: AI 규제 가시화 · 외국인 매도 · 반도체 추가 급락</p>
+      <ul><li>'AI 인프라 규제'가 구체적 정책으로 이어지면 반도체 투자 서사가 흔들려 추가 조정</li><li>외국인 대량 순매도(어제 -2.5조·오늘 -1.2조)가 지속되면 수급 공백</li><li>메모리·스마트폰 둔화 우려가 겹치는 국면</li></ul></div>
+    <div class="card scen base"><h3>고변동성 (디커플링 해소 대기)</h3><p class="note">조건: 규제 우려 완화 · 유가·금리 안정 · 수급 혼조</p>
+      <ul><li>미 지수 급등과의 디커플링이 점차 좁혀지며 5,400~5,900 박스권 등락</li><li>유가·금리·환율 안정과 미 빅테크 강세가 하방을 받침</li><li>규제 윤곽·고용 결과를 확인하기 전 눈치보기</li></ul></div>
+    <div class="card scen bull"><h3>반등 (규제 과도론)</h3><p class="note">조건: 규제 우려 과도 판명 · 저가매수 · 외국인 매도 진정</p>
+      <ul><li>'AI 인프라 규제 우려가 과도'로 판명되면 과매도 반도체에 저가매수 유입</li><li>미 빅테크 강세 낙수효과 + 외국인 매도 진정 시 디커플링 해소</li><li>유가·금리 하락과 수출 호조가 펀더멘털 신뢰를 지지</li></ul></div>`;
+  const eb = $('w-events'); eb.innerHTML = '';
+  D.events.forEach(r => { const tr = document.createElement('tr'); ['date', 'event', 'why'].forEach(k => { const td = document.createElement('td'); td.textContent = r[k]; tr.appendChild(td); }); eb.appendChild(tr); });
+
+  // ---------- charts ----------
+  function draw() {
+    const kAll = byM('KOSPI');
+    lineChart($('d-kospi'), kAll.slice(-5), { dashedLast: true });
+    lineChart($('d-sec'), kd('삼성전자').slice(-5), { dashedLast: true });
+    lineChart($('d-hynix'), kd('SK하이닉스').slice(-5), { dashedLast: true });
+    lineChart($('d-spx'), spx, { H: 170 }); lineChart($('d-nasdaq'), nas, { H: 170 });
+    hbar($('d-usbar'), D.us_top.filter(r => r.d4 !== '').map(r => ({ name: r.name, group: r.group, pct: +r.d4 })).sort((a, b) => b.pct - a.pct), { sub: 'group', height: 24 });
+
+    lineChart($('w-kospi'), kAll, { dashedLast: true });
+    lineChart($('w-nasdaq'), nas); lineChart($('w-spx'), spx);
+    lineChart($('w-sec'), kd('삼성전자'), { dashedLast: true }); lineChart($('w-hynix'), kd('SK하이닉스'), { dashedLast: true });
+    lineChart($('w-krw'), byM('KRW'));
+    hbar($('w-usbar'), D.us_top.filter(r => r.d3 !== '').map(r => ({ name: r.name, group: r.group, pct: +r.d3 })).sort((a, b) => b.pct - a.pct), { sub: 'group', height: 22 });
+    hbar($('w-usweek'), D.us_top.filter(r => r.d4 !== '').map(r => ({ name: r.name, group: r.group, pct: +r.d4 })).sort((a, b) => b.pct - a.pct), { sub: 'group', height: 22 });
+  }
+
+  // ---------- tabs ----------
+  const tabs = { d: [$('tab-d'), $('sec-d')], w: [$('tab-w'), $('sec-w')] };
+  function show(k) {
+    for (const [key, [b, s]] of Object.entries(tabs)) { const on = key === k; b.setAttribute('aria-selected', on); s.hidden = !on; }
+    try { localStorage.setItem('mk-tab', k); } catch (e) {}
+    draw();
+  }
+  $('tab-d').onclick = () => show('d'); $('tab-w').onclick = () => show('w');
+  let init = 'd'; try { init = localStorage.getItem('mk-tab') || 'd'; } catch (e) {}
+  show(init);
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(draw, 150); });
+}
+</script>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>renderReport({
+  "indices": [
+    {"date":"2026-10-30","market":"KOSPI","close":"5730.74","note":"-3.48% AI쇼크"},
+    {"date":"2026-11-02","market":"KOSPI","close":"5859.08","note":"+2.24%"},
+    {"date":"2026-11-03","market":"KOSPI","close":"5648.79","note":"-3.59%"},
+    {"date":"2026-11-04","market":"KOSPI","close":"5683.80","note":"+0.62% · 롤러코스피"},
+    {"date":"2026-11-05","market":"KOSPI","close":"5449.35","note":"장중 (저점 5,386·사이드카)"},
+    {"date":"2026-10-30","market":"NASDAQ","close":"25437.00","note":"-2.86%"},
+    {"date":"2026-11-02","market":"NASDAQ","close":"25164.36","note":"-1.07%"},
+    {"date":"2026-11-03","market":"NASDAQ","close":"25373.00","note":"+0.83%"},
+    {"date":"2026-11-04","market":"NASDAQ","close":"25736.51","note":"+1.40% 블루웨이브"},
+    {"date":"2026-10-30","market":"SPX","close":"7580.07","note":"-1.82%"},
+    {"date":"2026-11-02","market":"SPX","close":"7541.40","note":"-0.51%"},
+    {"date":"2026-11-03","market":"SPX","close":"7568.92","note":"+0.36%"},
+    {"date":"2026-11-04","market":"SPX","close":"7688.62","note":"+1.58% 블루웨이브"},
+    {"date":"2026-11-02","market":"KRW","close":"1343.8","note":""},
+    {"date":"2026-11-03","market":"KRW","close":"1341.0","note":""},
+    {"date":"2026-11-05","market":"KRW","close":"1338.8","note":"장중 · 달러 약세"}
+  ],
+  "kr_daily": [
+    {"date":"2026-10-30","name":"삼성전자","close":"225000","note":"-3.02%"},
+    {"date":"2026-11-02","name":"삼성전자","close":"229000","note":"+1.78%"},
+    {"date":"2026-11-03","name":"삼성전자","close":"219000","note":"-4.2%"},
+    {"date":"2026-11-04","name":"삼성전자","close":"218000","note":"-0.46%"},
+    {"date":"2026-11-05","name":"삼성전자","close":"207500","note":"장중 -4.82%"},
+    {"date":"2026-10-30","name":"SK하이닉스","close":"1418000","note":"-7.08%"},
+    {"date":"2026-11-02","name":"SK하이닉스","close":"1472000","note":"+3.81%"},
+    {"date":"2026-11-03","name":"SK하이닉스","close":"1398000","note":"-5.03%"},
+    {"date":"2026-11-04","name":"SK하이닉스","close":"1396000","note":"-0.14%"},
+    {"date":"2026-11-05","name":"SK하이닉스","close":"1308000","note":"장중 -6.30%"}
+  ],
+  "stocks": [
+    {"name":"코스피","a":"0.62","b":"-4.12","note":"5,683.80 → 5,449(장중)"},
+    {"name":"코스닥","a":"1.50","b":"-4.00","note":"714.95 → 686 안팎(장중)"},
+    {"name":"삼성전자","a":"-0.46","b":"-4.82","note":"반도체 · 11/5 207,500원"},
+    {"name":"SK하이닉스","a":"-0.14","b":"-6.30","note":"반도체 · 11/5 1,308,000원(140만 하회)"}
+  ],
+  "us_top": [
+    {"name":"아마존","ticker":"AMZN","group":"빅테크","d3":"","d4":"7.00"},
+    {"name":"애플","ticker":"AAPL","group":"빅테크","d3":"-1.90","d4":"6.00"},
+    {"name":"알파벳","ticker":"GOOGL","group":"빅테크","d3":"","d4":"5.00"},
+    {"name":"AMD","ticker":"AMD","group":"반도체","d3":"3.65","d4":"3.65"},
+    {"name":"메타","ticker":"META","group":"빅테크","d3":"","d4":"2.00"},
+    {"name":"테슬라","ticker":"TSLA","group":"빅테크","d3":"","d4":"-1.39"},
+    {"name":"팔란티어","ticker":"PLTR","group":"AI 인프라","d3":"-1.65","d4":"-1.60"},
+    {"name":"엔비디아","ticker":"NVDA","group":"반도체","d3":"2.29","d4":"-3.12"},
+    {"name":"마이크론","ticker":"MU","group":"반도체(메모리)","d3":"2.58","d4":"-7.00"},
+    {"name":"브로드컴","ticker":"AVGO","group":"반도체","d3":"3.07","d4":""}
+  ],
+  "macro": [
+    {"key":"cpi","label":"한국 10월 CPI(전년비)","value":"2.8","unit":"%","note":"두 달째 2%대"},
+    {"key":"ust10y","label":"미 10년물 국채금리","value":"4.92","unit":"%","note":"블루웨이브에 하락"},
+    {"key":"ism","label":"미 ISM 서비스(10월)","value":"54.5","unit":"","note":"28개월 연속 확장"},
+    {"key":"krw","label":"원·달러(11/5 장중)","value":"1338.8","unit":"원","note":"달러 약세"},
+    {"key":"base_rate","label":"한국 기준금리","value":"3.00","unit":"%","note":"10/22 동결"},
+    {"key":"kr_foreign","label":"외국인 11/4 순매도","value":"2.5","unit":"조원","note":"대량 매도"}
+  ],
+  "events": [
+    {"date":"2026-11-06(금)","event":"미 10월 고용보고서(NFP)","why":"비농업 +5.5만·실업률 4.2% 전망 · 연준 경로"},
+    {"date":"상시","event":"AI 인프라 규제 정책 동향","why":"블루웨이브發 데이터센터 규제가 반도체 변수"},
+    {"date":"2026-11 중","event":"한국은행 금통위(인상 전망)","why":"최종금리 3.5% 경로 vs 환율·증시 속도조절"},
+    {"date":"2026-11 중","event":"연 수출 1조달러 달성 전망","why":"반도체·AI 서버 수출 호조"},
+    {"date":"2026-11-19","event":"엔비디아 실적(예정)","why":"AI 수익성 논란의 최종 시험대"},
+    {"date":"2026-12 FOMC","event":"미 추가 인상 여부","why":"지표 확인 후 · 매파 2명 인상 주장"}
+  ],
+  "issues": [
+    {"date":"2026-11-04","time":"미국·밤","category":"정책","title":"중간선거 '블루웨이브' · 다우 +3.03% 44년來 최대 상승","detail":"민주당이 상·하원을 모두 장악(20년來 처음)하며 정치 불확실성이 해소. 다우 +3.03%(44년來 최대)·S&P +1.58%·나스닥 +1.40%. 아마존 +7%·애플 +6%·알파벳 +5% 등 빅테크가 상승 주도.","impact":"1","affected":"지수 전반 · 빅테크"},
+    {"date":"2026-11-04","time":"미국·밤","category":"해외증시","title":"반도체만 역행 급락 — 'AI 인프라 규제' 우려","detail":"데이터센터 밀집지(텍사스·조지아) 민주당 승리로 'AI 인프라 규제 강화' 전망이 부각돼 반도체만 급락. 엔비디아 -3.12%·마이크론 -7%·SOX -4%. 지수 급등과 디커플링.","impact":"-2","affected":"반도체 · AI 밸류체인"},
+    {"date":"2026-11-04","time":"장마감후","category":"실적","title":"퀄컴 가이던스 하회(-7%)·ARM 신중(-2%)","detail":"퀄컴 다음 분기 가이던스가 컨센을 하회(시간외 -7%), ARM도 당분기 전망 신중. 메모리 공급난發 스마트폰 판매 둔화 우려가 반도체 투심을 추가로 눌렀음.","impact":"-1","affected":"반도체 · IT"},
+    {"date":"2026-11-05","time":"오전","category":"수급","title":"코스피 '검은 목요일' · 장중 -5%대 · 매도 사이드카","detail":"간밤 미 반도체 급락 충격에 코스피가 장중 5,386.29(-5.23%)까지 급락, 10:16 매도 사이드카 발동. 다우 +3%와 역행하는 디커플링. 코스닥도 -4%대.","impact":"-3","affected":"코스피 전반 · 반도체"},
+    {"date":"2026-11-05","time":"장중","category":"종목","title":"SK하이닉스 -6%·삼성전자 -4.8% · 외국인 1.2조 매도","detail":"SK하이닉스 1,308,000원(-6.3%, 140만 하회)·삼성전자 207,500원(-4.8%). 외국인이 어제 -2.5조에 이어 오늘도 1.2조+ 순매도(개인·기관 방어). 반도체 대형주 직격.","impact":"-2","affected":"반도체 · 코스피 수급"},
+    {"date":"2026-11-05","time":"거시·부동산","category":"매크로","title":"유가·금리·환율 안정이 완충 · 부동산 신규 소식 없음","detail":"미 10년물 4.92%·유가 급락(중동 평화 기대)·원·달러 1,338원(달러 약세)으로 매크로 여건은 완충. ISM 서비스 54.5(28개월 연속 확장). 내일 미 10월 고용. 부동산은 신규 정책·통계 없이 실거래 시황만.","impact":"1","affected":"성장주 · 금리 · 환율"}
+  ]
+});</script>
+</body>
+</html>
